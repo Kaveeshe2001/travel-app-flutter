@@ -63,7 +63,20 @@ class _HomeState extends State<Home> {
                 ],
               ),
             ),
-            Container()
+            Container(
+              margin: EdgeInsets.only(left: 30.0, right: 30.0, top: MediaQuery.of(context).size.height/2.8),
+              child: Material(
+                elevation: 5.0,
+                borderRadius: BorderRadius.circular(20),
+                child: Container(
+                  padding: EdgeInsets.only(left: 20),
+                  decoration: BoxDecoration(color: Colors.white, border: Border.all(width: 1.5), borderRadius: BorderRadius.circular(10)),
+                  child: TextField(
+                    decoration: InputDecoration(border: InputBorder.none, hintText:"Search your destination", suffixIcon: Icon(Icons.search)),
+                  ),
+                ),
+              ),
+            )
           ],
         ),
       ],)),
