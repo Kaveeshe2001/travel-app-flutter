@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:travelapp_flutter/pages/home.dart';
+import 'package:travelapp_flutter/pages/top_places.dart';
 
 
 void main() {
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Home(),
+      home: TopPlaces(),
     );
   }
 }
